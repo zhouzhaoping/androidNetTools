@@ -20,7 +20,6 @@ import org.json.JSONObject;
 import android.util.Log;
 
 public class NetThread{
-	public String url;
 	
 	public String method;	
 	public int count;
@@ -97,7 +96,7 @@ public class NetThread{
 		public void run(){
 			try{
 				HttpClient client = new DefaultHttpClient();
-				HttpPost request = new HttpPost(url);
+				HttpPost request = new HttpPost(Variable.url);
 				
 				Log.d("request json", param.toString());
 				 
