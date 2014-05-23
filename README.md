@@ -24,5 +24,5 @@ net tools for android
 2. 传输utf8编码问题：可以使用utf8编码传输，也可以使用ascii编码传输（以\uXXXX形式表示一个汉字）。前者可以节省传输数据量。
 3. 大小写问题：Variable.java里的属性一定要使用小写
 4. 错误处理：通信过程可能出现多种错误，建议去掉"success":true这样的域，使用"return_code"，然后商量一份一致的错误列表
-
+5. 日期/时间以ISO格式传输，预先转换为utc+8
 
